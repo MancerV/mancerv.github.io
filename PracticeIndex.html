@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Exploring HTML forms</title>
+</head>
+<body>
+    <!-- This is a practice page for Lab 5.  Cut and paste notes from w3schools.com  -->
+    <!-- GET appends your data to the URL.  For passwords do not use GET change to POST-->
+    <form action="action_page.php" method="POST">
+        <div>
+            <!-- Text types can be used for names -->
+            <!-- Placeholder gives an example/default -->
+            <!-- Required will not allow you to submit if it is blank -->
+            <!-- FIRST NAME -->
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+        </div>
+        <br>
+        
+        <div>
+            <!-- LAST NAME -->
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+        </div>
+        <br>
+        
+        <div>
+        <!-- Radio buttons. Provide the same group name to force selection of only one --> 
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label><br><br>
+        </div>
+        <br>
+
+        <div>
+        <!-- Email type will require an @ symbol -->
+        <!-- Use placeholder hello@world -->
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" placeholder="hello@world" required>
+        </div>
+        <br>
+
+        <div>
+        <!-- Tel type is used for phone#.  We will not require this value -->  
+            <label for="phone">Enter a phone number:</label><br><br>
+            <input type="tel" id="phone" name="phone" placeholder="(123)456-789" required><br>
+        </div>
+        <br>
+
+        <div>
+        <!-- Provide the same group name to force selection of only one -->
+        <!-- Dropdown menu use a select instead of an input type-->
+        <!-- Dropdown menu use a select instead of a input type--> 
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+        <!-- Checkbox --> 
+        <!-- Checkbox type can be used for a subscribe box --> 
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br><br>
+        </div>
+        <br>
+        
+        <div>
+            <!-- This will reset our input box -->
+            <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+        </div>
+
+        <br>
+        <div>
+
+            <!-- This will submit the content -->
+
+        </div>
+
+        <!-- This is for the hidden field that the user does not see -->
+        <input type="hidden" name="hidden_field" value="KarlTa">   
+    </form>
+</body> 
+</html>
+
+
