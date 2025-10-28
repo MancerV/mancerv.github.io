@@ -1,0 +1,53 @@
+#main-nav ul li {
+      float: left;
+      position: relative;
+      right: 50%;
+    } 
+#main-nav {
+      float: left;
+      width: 100%;
+      background-color: #333;
+    }
+#main-nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      float: left;
+      position: relative;
+      left:50%;
+    }
+#main-nav ul li a {
+      padding: 10px 25px;
+      display: block;
+      text-decoration: none;
+      color: #ccc;
+    }
+#main-nav ul li a:hover {
+      background-color: #ccc;
+      color: #8f04ec;
+    }
+body {
+  background-image: url("images/color2.jpg");
+}
+p {
+    color: whitesmoke
+}
+h2 {
+    color: whitesmoke
+}
+#ed ul li {
+    color: whitesmoke
+}
+#exp ul li {
+    color: whitesmoke
+}
+#ski ul li {
+    color: whitesmoke
+}
+h1 {
+    color: rgb(103, 238, 13)
+}
+ul li a.active {
+  background-color: #04AAAA;
+}
+
